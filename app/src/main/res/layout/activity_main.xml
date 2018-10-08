@@ -31,6 +31,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:onClick="sendMessage"
-        android:text="SEARCH AN ITINERARY" />
+        android:text="@string/searchiti" />
 
 </android.support.design.widget.CoordinatorLayout>

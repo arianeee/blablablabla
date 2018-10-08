@@ -55,13 +55,25 @@ public class ItinerarySearchActivity extends AppCompatActivity {
         Intent intent = new Intent(ItinerarySearchActivity.this, ItineraryListActivity.class);
         EditText depart = findViewById(R.id.TVdep);
         EditText destination = findViewById(R.id.TVDes);
+        String destext="Destination";
+        TextView DestinationText = (TextView) findViewById(R.id.textView8);
+        DestinationText.setText(destext);
+        String Depart="Depart";
+        TextView DepartText = (TextView) findViewById(R.id.textView10);
+        DepartText.setText(Depart);
+        String Datext="Date";
+        TextView DateText = (TextView) findViewById(R.id.textView6);
+        DateText.setText(Datext);
+
         //final EditText date= findViewById(R.id.ETDate);
+        String search= "SEARCH";
 
         String departt = depart.getText().toString();
         String destinationt = destination.getText().toString();
         //final Calendar myCalendar = Calendar.getInstance();
 
         final Button button2 = (Button) findViewById(R.id.button_search_iti);
+        button2.setText(search);
         //Intent intent = new Intent(ItinerarySearchActivity.this, ItineraryListActivity.class);
         //EditText depart= findViewById(R.id.TVdep);
 
@@ -72,13 +84,14 @@ public class ItinerarySearchActivity extends AppCompatActivity {
                 /*Intent intent = new Intent(ItinerarySearchActivity.this, ItineraryListActivity.class);*/
                 EditText depart = findViewById(R.id.TVdep);
                 EditText destination = findViewById(R.id.TVDes);
+                String phraseinfo ="Please complete your travel's informations";
                 String departt = depart.getText().toString();
                 String destinationt = destination.getText().toString();
 
 
                 if ((destinationt.isEmpty() || departt.isEmpty())) {
 
-                    Toast.makeText(ItinerarySearchActivity.this, "Please complete your travel's informations", Toast.LENGTH_LONG).show();
+                    Toast.makeText(ItinerarySearchActivity.this, phraseinfo, Toast.LENGTH_LONG).show();
                 } else {
                     Intent intent = new Intent(ItinerarySearchActivity.this, ItineraryListActivity.class);
                     //String departt = depart.getText().toString();

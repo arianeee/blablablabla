@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">blbla</string>
+    <string name="action_settings">Parametre</string>
+    <string name="destination">Destination</string>
+    <string name="depart">Depart</string>
+    <string name="search">RECHERCHER</string>
+    <string name="date">Date</string>
+    <string name="searchiti">RECHERCHEZ VOTRE ITINAIRE</string>
+</resources>
